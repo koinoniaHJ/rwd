@@ -17,23 +17,23 @@ a { text-decoration: none; color: inherit; }
     border-bottom: 1px solid black;
 }
 #header h1 { position: absolute; top: 10px; left: 10px; }
-#header h1 a {  }
+/* #header h1 a {  } */
 
 .menu-button { display: none; }
 
 /* nav */
-#gnb {  }
+/* #gnb {  } */
 #gnb ul { height: 70px; display: flex; align-items: center; column-gap: 50px;
     text-transform: uppercase;
 }
-#gnb ul li {  }
-#gnb ul li a {  }
+/* #gnb ul li {  } */
+/* #gnb ul li a {  } */
 
 /* main */
-#container {  }
+/* #container {  } */
 
 /* section */
-#container section {  }
+/* #container section {  } */
 
 #introduce { height: 50dvh; background-color: lightcoral; }
 
@@ -42,7 +42,7 @@ a { text-decoration: none; color: inherit; }
 #skill ul li { width: 30vw; height: 30vw; /* 정사각형 */
     border: 1px solid black; }
 
-#project {  }
+/* #project {  } */
 #project ul { display: flex; justify-content: space-evenly; }
 #project ul li { width: 30vw; height: 30vw; 
     border: 1px solid black;}

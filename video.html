@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오</title>
+    <!-- <a href="https://pixabay.com/ko//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=382582">Pixabay</a>에서 <a href="https://pixabay.com/ko/users/matthias_groeneveld-4535957/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=382582">Matthias_Groeneveld</a> 님이 제공한 동영상 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #intro { position: relative; height: 100dvh; }
+
+        /* #intro h2 {} */
+
+        .view { position: relative; z-index: 9; }
+
+        /* 비디오를 배경으로 */
+        #video {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #video video {
+            position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover; object-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="intro">
+        <h2 class="view">인트로</h2>
+        <p class="view"></p>
+        <ul class="view">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div id="video">
+            <video src="./video.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+</body>
+
+</html>
