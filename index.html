@@ -4,28 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반응형 웹사이트</title>
-    <style>
-        * { margin: 0; padding: 0; }
-        /* body { background-color: lightblue; } */
-
-        /* 599px 이하 */
-        @media screen and (max-width: 599px) {
-            body { background-color: lightyellow; }
-        }
-        /* 600px - 1199px */
-        @media screen and (min-width: 600px) {
-            body { background-color: lightsalmon; }
-        }
-        /* 1200px 이상 */
-        @media screen and (min-width: 1200px) {
-            body { background-color: lightcoral; }
-        }
-
-    </style>
+    <!-- Noto Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- SUIT -->
+    <!-- <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet"> -->
+    <!-- SUITE -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./common.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
 </head>
 <body>
-    <header id="header"></header>
-    <main id="container"></main>
-    <footer id="footer"></footer>
+    <header id="header">
+        <h1>
+            <a href="#">로고</a>
+        </h1>
+        <nav id="gnb">
+            <h2 class="hidden">메뉴 제목</h2>
+            <ul>
+                <li><a href="#introduce">introduce</a></li>
+                <li><a href="#skill">my skill</a></li>
+                <li><a href="#project">project</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="menu-button"><span>메뉴</span></a>
+    </header>
+    <main id="container">
+        <section id="introduce">
+            <h2>제가 누구냐고요?</h2>
+            <p>저는 김종현입니다.</p>
+        </section>
+        <section id="skill">
+            <h2>다루는 툴 및 언어</h2>
+            <ul>
+                <li>JAVA</li>
+                <li>JavaScript</li>
+                <li>VSCode</li>
+                <li>Cursor</li>
+                <li>Eclips</li>
+            </ul>
+        </section>
+        <section id="project">
+            <h2>프로젝트</h2>
+            <ul>
+                <li>
+                    <h3>프로젝트1</h3>
+                </li>
+                <li>
+                    <h3>프로젝트2</h3>
+                </li>
+                <li>
+                    <h3>프로젝트3</h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        <small>&copy; 2026 CHJ. All rights reserved.</small>
+    </footer>
+    <script>
+        let state = 0;
+        $(".menu-button").on('click', function() {
+            if(state == 0) {
+                $("#gnb").animate({ left:0 });
+                state = 1;
+            } else {
+                $("#gnb").animate({ left: "-100%" });
+                state = 0;
+            }
+        });
+    </script>
 </body>
 </html>
