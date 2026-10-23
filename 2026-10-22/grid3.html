@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 50px;
+        }
+        .item {
+            padding: 20px;
+            background-color: lightblue;
+        }
+        .item8 {
+            /* grid-row: 2 / span 2; */
+            /* grid-column: span 3; */
+            grid-area: 2 / 1 / span 2 / span 3; /* grid-area: row-start / column-start / row-end / column-end; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="item item1">1</section>
+        <section class="item item2">2</section>
+        <section class="item item3">3</section>
+        <section class="item item4">4</section>
+        <section class="item item5">5</section>
+        <section class="item item6">6</section>
+        <section class="item item7">7</section>
+        <section class="item item8">8</section>
+        <section class="item item9">9</section>
+        <section class="item item10">10</section>
+        <section class="item item11">11</section>
+        <section class="item item12">12</section>
+        <section class="item item13">13</section>
+    </main>
+</body>
+</html>

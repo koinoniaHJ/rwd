@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* 초기화 코드, m0 + tab = margin: 0, p0 + tab = padding: 0 */
+* { margin: 0; padding: 0; box-sizing: border-box;}
+li { list-style: none; }
+a { color: inherit; text-decoration: none; }
+/* .hidden { position: absolute; left: -9999px; } */
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px; height: 1px; margin: -1px;
+    overflow: hidden;
+}
+
+#goGnb {
+    position: fixed;
+    right: 20px; bottom: 50px; width: 50px; height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: url(./goGnb.png) no-repeat center center / 50%;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%; */
+}
+
+#goGnb span {
+    /* 접근성 요소로 화면에서 보이지는 않지만 요소는 남아있게 하는 속성 */
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px; height: 1px; margin: -1px;
+    overflow: hidden;
+}
+
+/* 변수 */
+:root {
+    --font-base: 16px;
+    --font-header: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 헤더 */
+header { 
+    display: flex; 
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: lightgreen;
+    }
+header h1 { width: 30%; 
+    display: flex; justify-content: center; align-items: center; }
+header nav { width: 70%; }
+header nav ul { height: 100px; /* h100 + tab = height: 100px; */
+    display: flex; justify-content: space-evenly; align-items: center; }
+header nav ul li { }
+header nav ul li a { font-size: 20px; text-transform: uppercase; 
+    padding: 10px 20px;  transition-duration: 0.5s; }
+header nav ul li a:hover { background: black; color: white;}
+
+/* 메인 */
+main section {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#introduce {
+    background-color: lightcoral;
+}
+#portfolio {
+    background-color: lightblue;
+}
+#connect {
+    background-color: lightgray;
+}
+
+/* 푸터 */
+footer {
+    height: 300px;
+}
