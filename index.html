@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹사이트</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        /* body { background-color: lightblue; } */
+
+        /* 599px 이하 */
+        @media screen and (max-width: 599px) {
+            body { background-color: lightyellow; }
+        }
+        /* 600px - 1199px */
+        @media screen and (min-width: 600px) {
+            body { background-color: lightsalmon; }
+        }
+        /* 1200px 이상 */
+        @media screen and (min-width: 1200px) {
+            body { background-color: lightcoral; }
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+    <main id="container"></main>
+    <footer id="footer"></footer>
+</body>
+</html>
