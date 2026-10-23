@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* flex */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#parent {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: row; flex 기본값 */
+    /* flex-wrap: nowrap; flex 기본값 */
+    flex-flow: row nowrap; /* direction, wrap */
+    justify-content: space-around;
+    align-items: end;
+}
+
+.content {
+    font-size: 100px;
+}
+
+.con1 {
+    width: 100px;
+    height: 500px;
+    background-color: lightcoral;
+}
+
+.con2 {
+    width: 200px;
+    height: 300px;
+    background-color: lightsalmon;
+}
+
+.con3 {
+    width: 300px;
+    height: 200px;
+    background-color: lightyellow;
+}

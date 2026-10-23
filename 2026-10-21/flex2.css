@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* flex */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#parent {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end; /* wrap 됐을 때 적용, 교차축에 여유 공간이 있을 때 적용 */
+}
+
+.content {
+    font-size: 100px;
+}
+
+.con1 {
+    width: 500px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+.con2 {
+    width: 400px;
+    height: 150px;
+    background-color: lightsalmon;
+    order: 5;
+}
+
+.con3 {
+    width: 450px;
+    height: 200px;
+    background-color: lightyellow;
+}
